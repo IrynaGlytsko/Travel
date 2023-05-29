@@ -1,0 +1,436 @@
+body{
+  font-family: 'Red Hat Text', sans-serif; 
+  min-width: 1440px;
+  min-height: 100vh;
+  font-size: 16px;
+  margin: 0 auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+*,
+::before,
+::after{
+  box-sizing: border-box;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header{
+  background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+.background{
+  margin: 0 auto;
+  display: flex;
+  width: 1440px;
+  height: 90px;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+.header-logo{
+  display: flex;
+  width: 216px;
+  height: 31px;
+  margin: 25px 120px 34px;
+}
+.logo img{
+  width: 30px;
+  height: 30px;
+}
+.name-logo{
+  width: 180px;
+  height: 31px;
+  font-family: 'Magra';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+}
+.header-nav{
+  display: flex;
+  padding: 0px;
+  margin: 35px;
+  gap: 42px;
+  width: 547px;
+  height: 21px;
+}
+.header-link{
+  width: 105px;
+  height: 21px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
+}
+.header-link a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.login{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 29px;
+  gap: 10px;
+  width: 105px;
+  height: 41px;
+  margin: 25px 152px 24px;
+  background: #0D606F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section Preview */
+
+.preview{
+  width: 892px;
+  height: 422px;
+  margin: 32px 428px 221px 120px;
+}
+.section-title{
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #fff;
+}
+.subtitle{
+  width: 723px;
+  height: 24px;
+  margin-top: 30px;
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+.search{
+  display: flex;
+  align-self: center;
+  text-align: center;
+  width: 892px;
+  height: 95px;
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+.section-search{
+  width: 560px;
+  height: 22px;
+  margin: 32px 291px 41px 41px;
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+}
+.button{
+  width: 395px;
+  height: 59px;
+  margin: 18px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 22px;
+  gap: 10px;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Main */
+/* Section Steps */
+.steps-title{
+  width: 611px;
+  height: 53px;
+  margin: 80px auto 40px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+}
+.steps-wrapper{
+  width: 1177px;
+  height: 154px;
+  margin: 0 auto;
+  margin-bottom: 97px;
+  display: flex;
+  justify-content: space-around;
+}
+.steps-item{
+  width: 33%;
+  height: 154px;
+  text-align: center;
+  align-self: center;
+}
+.steps-bg{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #F2785C;
+  border-radius: 16px;
+  position: relative;
+}
+.steps-img{
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 27%;
+}
+.steps-text{
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+}
+
+/* Section destinations */
+.destinations{
+  text-align: center;
+}
+.destinations-title{
+  width: 501px;
+  height: 53px;
+  margin: 97px auto 46px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+}
+.destinations-wrapper{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 46px 0 23px;
+}
+.destinations-cards img{
+  width: 800px;
+  height: 835px;
+  margin: 0 30px 15px;
+}
+.text{
+  width: 30%;
+  text-transform: uppercase;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #fff;
+  margin-top: -130px;
+  margin-left: -30px;
+}
+.elipse img{
+  padding: 0 5px;
+  margin-bottom: 40px;
+}
+.find-more{
+  margin: 0 auto; 
+  width: 228px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 12px;
+  gap: 10px;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+.btn{
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+}
+
+/* Section stories */
+.stories-title{
+  text-align: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  margin-bottom: 50px;
+}
+.container{
+  margin: 0 auto;
+  width: 1442px;
+  height: 1331px;
+  background-image: url(assets/img/Rectangle33.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15px;
+}
+.container-background{
+  width: 1445px;
+  height: 1270px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.stories-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stories-item{
+  margin-top: 35px;
+  width: 1200px;
+  height: 250px;
+  display: flex;
+}
+.stories-img img{
+  width: 400px;
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
+.stories-description{
+  margin-left: 40px;
+}
+.stories-name{
+  width: 760px;
+  height: 35px;
+  margin-bottom: 25px;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #0D606F;
+}
+.stories-text{
+  width: 760px;
+  height: 184px;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+}
+.read-more{
+  text-decoration: underline;
+}
+.stories-more{
+  margin-top: 33px;
+  cursor: pointer;
+}
+
+/* Footer  */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -40px;
+  height: 21px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.footer-links{
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media{
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+  margin-top: 20px;
+}
+.rsschool{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.link-item{
+  font-size: 50px;
+  margin-left: 20px;
+  color: #fff;
+}
+.hover:hover{
+  color: #F2785C;
+  text-shadow: 1px 1px 1px #0D606F;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.hov:hover{
+  color: #0D606F;
+  text-shadow: 1px 1px 1px #0D606F;
+  background-color:  #F2785C;
+  transition: all 0.2s linear;
+}
+
+@media (max-width: 391px){
+ 
+}
