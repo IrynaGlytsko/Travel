@@ -6,193 +6,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/405933996c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/405933996c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Travel</title>
   </head>
   <body>
 
     <header class="header">
-      
-      <div class="background">
+      <div class="header-logo">
+        <div class="logo">
+          <img src="assets/img/Vector.svg" alt="Travel Portal" />
+        </div>
+        <div class="name-logo">Travel Portal</div>
+      </div>
 
-        <div class="header-logo">
-          <div class="logo">
-            <img src="assets/img/Vector.svg" alt="Travel Portal" />
-          </div>
-          <div class="name-logo">Travel Portal</div>
+      <nav class="nav" id="navigation">
+        <ul class="header-nav">
+          <li class="header-link"><a href="#preview">How It Works</a></li>
+          <li class="header-link"><a href="#steps">Plan Your Trip</a></li>
+          <li class="header-link"><a href="#destinations">Destinations</a></li>
+          <li class="header-link"><a href="#stories">Travel Stories</a></li>
+          <li class="header-link block"><a href="#destinations" id="account">Account</a></li>
+          <li class="header-link block"><a href="#stories">Social Media</a></li>
+        </ul>
+
+        <div class="header__nav-close">
+          <span class="header__nav-close-line"></span>
+          <span class="header__nav-close-line"></span>
         </div>
 
-        <nav class="nav">
-          <ul class="header-nav">
-            <li class="header-link"><a href="#preview">How It Works</a></li>
-            <li class="header-link"><a href="#steps">Plan Your Trip</a></li>
-            <li class="header-link"><a href="#destinations">Destinations</a></li>
-            <li class="header-link"><a href="#stories">Travel Stories</a></li>
-          </ul>
-        </nav>
+      </nav>
 
-        <button class="login hover">Login</button>
+      <div class="header__burger burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
+
+      <button class="login hover" id="open">Login</button>
+    </header>
+
+    <!-- Pop up -->
+    <div class="modal" id="modal">
+      
+      <div class="modal__body">
+        <h3 class="modal__title">Log in to your account</h3>
+
+        <button class="facebook__block">
+          <div class="fb__img"><img src="assets/img/Facebook Logo.svg" alt="Sign In with Facebook"></div>
+          <div class="sign__in__facebook">Sign In with Facebook</div>
+        </button>
+
+        <button class="google__block">
+          <div class="google__img"><img src="assets/img/Google Logo.svg" alt="Sign In with Google"></div>
+          <div class="sign__in__google">Sign In with Google</div>
+        </button>
+
+        <div class="or"><img src="assets/img/OR.png" alt="OR"></div>
+        
+        <form action="#" method="get" class="form">
+
+          <div class="email__form">
+            <label for="email" class="label">E-mail</label><br>
+            <input type="text" id="email" class="input">
+          </div>
+          
+          <div class="password__form">
+            <label for="password" class="label">Password</label><br>
+            <input type="password" id="password" class="input">
+          </div>
+
+          <button class="sign__in" id="sn">
+            <div class="sign">Sign In</div>
+          </button>
+
+          <div class="forgot">Forgot your password?</div>
+        </form>
+
+        <div class="or2"><img src="assets/img/Line 2.png" alt="OR"></div>
+
+        <div class="registr">Don’t have an account?<a href="#" id="register"><strong class="strong"> Register</strong></a></div>
+
+      </div>
+    </div> <!-- /.pop up -->
+
+    <!-- Sign up pop up -->
+    <div class="sign__up__pop__up" id="up">
+
+      <div class="up__body">
+
+        <h3 class="modal__title">Create account</h3>
+        <form action="#" method="get" class="form">
+
+          <div class="email__form">
+            <label for="email" class="label">E-mail</label><br>
+            <input type="text" id="emailu" class="input">
+          </div>
+          
+          <div class="password__form">
+            <label for="password" class="label">Password</label><br>
+            <input type="password" id="passwordu" class="input">
+          </div>
+
+          <button class="sign__in" id="su">
+            <div class="sign">Sign Up</div>
+          </button>
+
+        </form>
+
+        <div class="or2"><img src="assets/img/Line 2.png" alt="OR"></div>
+
+        <div class="registr">Already have an account?<a href="#"><strong class="strong" id="login"> Log in</strong></a></div>
 
       </div>
 
+    </div> <!-- /.sign__up__pop__up -->
+
+    <main class="main" id="close">
       <section class="preview" id="preview">
-        
-        <h1 class="section-title">Explore the beauty of the World</h1>
-        <p class="subtitle">
-          Receive personalized recommendations for countries, hotels, activities
-          and more
-        </p>
+        <div class="background_color"></div>
+        <div class="wrapper">
+          <h1 class="section-title">Explore the beauty of the World</h1>
+          <p class="subtitle">
+            Receive personalized recommendations for countries, hotels,
+            activities and more
+          </p>
 
-        <div class="search">
-          <p class="section-search">What would you like to do?</p>
-          <button class="button hover">Start Planning</button>
+          <div class="search">
+            <p class="section-search">What would you like to do?</p>
+            <button class="button hover">Start Planning</button>
+          </div>
         </div>
-
       </section>
-      
-    </header>
-
-    <main class="main">
 
       <section class="steps" id="steps">
-
         <h2 class="steps-title">3 STEPS TO THE PERFECT TRIP</h2>
 
         <div class="steps-wrapper">
-
           <div class="steps-item">
-            <div class="steps-bg"><img class="steps-img" src="assets/img/1.svg" alt="#"></div>
+            <div class="steps-bg">
+              <img class="steps-img" src="assets/img/1.svg" alt="#" />
+            </div>
             <p class="steps-text">Tell us what you want to do</p>
           </div>
 
           <div class="steps-item">
-            <div class="steps-bg"><img class="steps-img" src="assets/img/2.svg" alt="#"></div>
+            <div class="steps-bg">
+              <img class="steps-img" src="assets/img/2.svg" alt="#" />
+            </div>
             <p class="steps-text">Share us preferable dates</p>
           </div>
 
           <div class="steps-item">
-            <div class="steps-bg"><img class="steps-img" src="assets/img/3.svg" alt="#"></div>
+            <div class="steps-bg">
+              <img class="steps-img" src="assets/img/3.svg" alt="#" />
+            </div>
             <p class="steps-text">We will give you recommendations</p>
           </div>
-
         </div>
-       
       </section>
 
       <section class="destinations" id="destinations">
-
         <h2 class="destinations-title">POPULAR DESTINATIONS</h2>
 
-        <div class="destinations-wrapper">
+        <!--<div class="destinations-wrapper sli">
 
-          <div class="destinations-cards"><img src="assets/img/Rectangle23.jpg" alt="#"><p class="text">SPAIN</p></div>
-          <div class="destinations-cards"><img src="assets/img/Rectangle24.jpg" alt="#"><p class="text">JAPAN</p></div>
-          <div class="destinations-cards"><img src="assets/img/Rectangle25.jpg" alt="#"><p class="text">USA</p></div>
+          <div class="destinations-cards">
+            <img src="assets/img/Rectangle23.jpg" alt="#" />
+            <p class="text">SPAIN</p>
+          </div>
 
-        </div>
+          <div class="destinations-cards">
+            <img src="assets/img/Rectangle24.jpg" alt="#" />
+            <p class="text">JAPAN</p>
+          </div>
+          
+          <div class="destinations-cards">
+            <img src="assets/img/Rectangle25.jpg" alt="#" />
+            <p class="text">USA</p>
+          </div>
+
+        </div>-->
+
+        <div class="intro">
+
+          <div class="slide" style="
+          background-image: url(assets/img/Rectangle23.jpg);">
+              <h3><a href="services.html" class="text">SPAIN</a></h3>
+          </div>
+  
+          <div class="slide active" style="
+          background-image: url(assets/img/Rectangle24.jpg);">
+              <h3><a href="services.html" class="text">JAPAN</a></h3>
+          </div>
+  
+          <div class="slide" style="
+          background-image: url(assets/img/Rectangle25.jpg);">
+              <h3><a href="services.html" class="text">USA</a></h3>
+          </div>
+  
+      </div>
+
+        <!-- Slider 390px -->
+        <div class="destinations-wrapper-390">
+          <div class="destinations-cards">
+            <img src="assets/img/Rectangle26.jpg" alt="#" />
+            <p class="text">SPAIN</p>
+          </div>
+
+          <div class="slider_2">
+            <div class="slider sl">
+              <img src="assets/img/pooii.png" alt="" />
+            </div>
+            <div class="slider sld">
+              <img src="assets/img/pooii.png" alt="" />
+            </div>
+          </div>
+        </div> <!-- /.slider -->
 
         <div class="elipse">
-          <img src="assets/img/Ellipse1.svg" alt="#">
-          <img src="assets/img/Ellipse2.svg" alt="#">
-          <img src="assets/img/Ellipse3.svg" alt="#">
+          <img src="assets/img/Ellipse1.svg" alt="#" />
+          <img src="assets/img/Ellipse2.svg" alt="#" />
+          <img src="assets/img/Ellipse3.svg" alt="#" />
         </div>
 
-        <button class="find-more hov"><img src="assets/img/bi_arrow-right.svg" alt="#"><span class="btn">Find More</span></button>
+        <button class="find-more hov">
+          <img src="assets/img/bi_arrow-right.svg" alt="#" /><span class="btn"
+            >Find More</span
+          >
+        </button>
       </section>
 
       <section class="stories" id="stories">
-
         <h2 class="stories-title">TRAVEL STORIES</h2>
 
         <div class="container">
           <div class="container-background">
             <div class="stories-cards">
-
               <div class="stories-item">
-
-                <div class="stories-img"><img src="assets/img/Rectangle29.jpg" alt="#"></div>
-                <div class="stories-description">
-                  <div class="stories-name">10 Photos of Attractive Thailand</div>
-                  <div class="stories-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read-more"><b>Read More</b></span></div>
+                <div class="stories-img">
+                  <img src="assets/img/Rectangle29.jpg" alt="#" />
                 </div>
-
+                <div class="stories-description">
+                  <div class="stories-name">
+                    10 Photos of Attractive Thailand
+                  </div>
+                  <div class="stories-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    <span class="read-more"><b>Read More</b></span>
+                  </div>
+                </div>
               </div>
 
               <div class="stories-item">
-
-                <div class="stories-img"><img src="assets/img/Rectangle30.jpg" alt="#"></div>
-                <div class="stories-description">
-                  <div class="stories-name">Canyonlands National Park, Utah</div>
-                  <div class="stories-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read-more"><b>Read More</b></span></div>
+                <div class="stories-img">
+                  <img src="assets/img/Rectangle30.jpg" alt="#" />
                 </div>
-
+                <div class="stories-description">
+                  <div class="stories-name">
+                    Canyonlands National Park, Utah
+                  </div>
+                  <div class="stories-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    <span class="read-more"><b>Read More</b></span>
+                  </div>
+                </div>
               </div>
 
               <div class="stories-item">
-
-                <div class="stories-img"><img src="assets/img/Rectangle31.jpg" alt="#"></div>
-                <div class="stories-description">
-                  <div class="stories-name">I left my heart in the Mountains!</div>
-                  <div class="stories-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read-more"><b>Read More</b></span></div>
+                <div class="stories-img">
+                  <img src="assets/img/Rectangle31.jpg" alt="#" />
                 </div>
-
+                <div class="stories-description">
+                  <div class="stories-name">
+                    I left my heart in the Mountains!
+                  </div>
+                  <div class="stories-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. 
+                    <span class="read-more"><b>Read More</b></span>
+                  </div>
+                </div>
               </div>
 
               <div class="stories-item">
-
-                <div class="stories-img"><img src="assets/img/Rectangle32.jpg" alt="#"></div>
-                <div class="stories-description">
-                  <div class="stories-name">The Longest journey in my life!</div>
-                  <div class="stories-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read-more"><b>Read More</b></span></div>
+                <div class="stories-img">
+                  <img src="assets/img/Rectangle32.jpg" alt="#" />
                 </div>
-
+                <div class="stories-description">
+                  <div class="stories-name">
+                    The Longest journey in my life!
+                  </div>
+                  <div class="stories-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. 
+                    <span class="read-more"><b>Read More</b></span>
+                  </div>
+                </div>
               </div>
 
-              <button class="find-more stories-more hov"><img src="assets/img/bi_arrow-right.svg" alt="#"><span class="btn">See More</span></button>
-
+              <button class="find-more stories-more hov">
+                <img src="assets/img/bi_arrow-right.svg" alt="#" /><span
+                  class="btn"
+                  >See More</span
+                >
+              </button>
             </div>
           </div>
         </div>
-
       </section>
-
     </main>
-    
-    <footer class="footer">
 
+    <footer class="footer">
       <div class="footer-links">
         <ul class="social">
-          <li><a href="https://rs.school/js/" target="_blank" class="rsschool">r &#8195;s<br>
-            school</a></li>
-            <li class="link-item">
-              <a
-                 href="https://github.com/IrynaGlytsko" target="_blank" class="link-item"> <i class="fa fa-brands fa-github footer-git"></i></a>
-             </li>
+          <li>
+            <a href="https://rs.school/js/" target="_blank" class="rsschool"
+              >r &#8195;s<br />
+              school</a
+            >
+          </li>
+          <li class="link-item">
+            <a
+              href="https://github.com/IrynaGlytsko"
+              target="_blank"
+              class="link-item"
+            >
+              <i class="fa fa-brands fa-github footer-git"></i
+            ></a>
+          </li>
         </ul>
       </div>
 
-      <div class="footer-text">
-        All Rights Reserved © Travel Portal
-      </div>
+      <div class="footer-text">All Rights Reserved © Travel Portal</div>
 
       <div class="social-media">
         <ul class="social">
-          <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/social1.svg" alt="#"></a></li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="assets/img/social1.svg" alt="#"
+            /></a>
+          </li>
         </ul>
         <ul class="social">
-          <li><a href="https://www.youtube.com/" target="_blank"><img src="assets/img/social2.svg" alt="#"></a></li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="assets/img/social2.svg" alt="#"
+            /></a>
+          </li>
         </ul>
         <ul class="social">
-          <li><a href="https://twitter.com/" target="_blank"><img src="assets/img/social3.svg" alt="#"></a></li>
+          <li>
+            <a href="https://twitter.com/" target="_blank"
+              ><img src="assets/img/social3.svg" alt="#"
+            /></a>
+          </li>
         </ul>
       </div>
-      
     </footer>
 
     <script src="script.js"></script>
